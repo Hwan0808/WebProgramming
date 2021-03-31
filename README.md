@@ -3,7 +3,7 @@
 
 
 <p align="center"> 
-         WebProgramming _ html,css,javascript <br>
+         <div> WebProgramming _ html,css,javascript </div>
          Sungkonghoe University WebProgramming in 2019 
 </p>
 
