@@ -1,5 +1,5 @@
 ### README.md
 
-- WebProgramming_Study
-- html,css,javascript
-- 공부자료 및 실습과제
+- 웹프로그래밍
+- 실습 과제 및 연습 문제 풀이
+- HTML,CSS,JAVASCRIPT
