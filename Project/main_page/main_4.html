@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>컴괴사</title>
+  <script type="text/javascript" src="../javascript/javascript.js"></script>
+<style type="text/css">
+  @import url(../css/style.css);
+</style>
+</head>
+<body onload="timer()">
+
+<div id ="clock"></div>
+
+<form align="right">
+  <label class="id">ID :</label>
+    <input name="userid" type="text" placeholder="아이디를 입력해주세요.">&nbsp;&nbsp;
+  <label class="id">PW :</label>
+    <input name="pwd" type="password" placeholder="비밀번호를 입력해주세요.">&nbsp;&nbsp;
+    <input type="submit" value="     로그인     " style="bottom: 10px">&nbsp;
+    <a href="group.html"><input type="button" value="   회원가입   " style="bottom: 10px"></a><br><br>
+</form>
+
+<div class="header">
+  <h1>컴퓨터를 괴롭히는 사람들 "컴괴사"</h1>
+  <h4>컴괴사는 컴퓨터 하드웨어 주가 되는 곳이며, 여러분이 만들어가는 커뮤니티 입니다.</h4>
+  <div><a href="main.html"><img src="../image/littledeep_computer_style1.png" width="150" height="150"></a><p>Created By @cch_in<p></div>
+</div>
+
+<div class="nav">
+  <ul>
+  <li><img src="../image/공지사항.png" width="30" height="30" alt="이미지 없음">&nbsp;&nbsp;<a href="main_1.html" onmousedown="this.style.color='blue'">공지사항</a></li>
+  <li><img src="../image/칼럼.png" width="30" height="30" alt="이미지 없음">&nbsp;&nbsp;<a href="main_2.html" onmousedown="this.style.color='blue'">칼럼</a></li>
+  <li><img src="../image/뉴스정보.png" width="30" height="30" alt="이미지 없음">&nbsp;&nbsp;<a href="main_3.html" onmousedown="this.style.color='blue'">뉴스/정보</a></li>
+  <li><img src="../image/성능비교.png" width="30" height="30" alt="이미지 없음">&nbsp;&nbsp;<a href="main_4.html" onmousedown="this.style.color='blue'">성능비교</a></li>
+  <li><img src="../image/커뮤니티.png" width="30" height="30" alt="이미지 없음">&nbsp;&nbsp;<a href="main_5.html" onmousedown="this.style.color='blue'">커뮤니티</a></li>
+  <label><li><form><input type="text" placeholder="검색어를 입력해주세요.">
+            <input type="submit" value="검색" onclick="warning()" >
+      </form>
+  </li></label>
+  </ul>
+</div>
+
+<div class="cont">
+ <table>
+  <th><p>시네벤치 R15 (2020-05-20 업데이트)</p>
+  <p><a href="multicore.html">멀티코어</a> / <a href="singlecore.html">싱글코어</a></p></th>
+
+  <tr>
+    <td class="score">
+    <p>라이젠 9 3900X</p>
+    <div class="gauge_1" style="background-color: #ff0000 ; width: 70%; padding: 10px 20px">3,106</div></td>
+
+  </tr>
+    <tr>
+    <td class="score">
+    <p>코어 i9-10900K(F)</p>
+    <div class="gauge_2" style="background-color: #0000ff; width: 65%; padding: 10px 20px">2,657</div></td>
+  </tr>
+    <tr>
+    <td class="score">
+    <p>라이젠 7 3700X</p>
+    <div class="gauge_1" style="background-color: #ff0000; width: 55%; padding: 10px 20px">2,117</div></td>
+  </tr>
+    <tr>
+    <td class="score">
+    <p>코어 i7-10700K(F)</p>
+    <div class="gauge_2" style="background-color: #0000ff; width: 50%; padding: 10px 20px">2,068</div></td>
+  </tr>
+    <tr>
+    <td class="score">
+    <p>라이젠 7 2700X</p>
+    <div class="gauge_1" style="background-color: #ff0000; width: 45%; padding: 10px 20px">1,813</div></td>
+  </tr>
+    <tr>
+    <td class="score">
+    <p>라이젠 7 1800X</p>
+    <div class="gauge_1" style="background-color: #ff0000; width: 40%; padding: 10px 20px">1,631</div></td>
+  </tr>
+    <tr>
+    <td class="score">
+    <p>라이젠 5 3600X</p>
+    <div class="gauge_1" style="background-color: #ff0000; width: 39%; padding: 10px 20px">1,628</div></td> 
+  </tr>
+    <tr>
+    <td class="score">
+    <p>코어 i7-9700K(F)</p>
+    <div class="gauge_2" style="background-color: #0000ff; width: 38%; padding: 10px 20px">1,532</div></td>
+  </tr>
+    <tr>
+    <td class="score">
+    <p>코어 i5-10600K(F)</p>
+    <div class="gauge_2" style="background-color: #0000ff; width: 35%; padding: 10px 20px">1,497</div></td>
+  </tr>
+    <tr>
+    <td class="score">
+    <p>코어 i7-8700K</p>
+    <div class="gauge_2" style="background-color: #0000ff; width: 33%; padding: 10px 20px">1,443</div></td>
+  </tr>
+ </table>
+
+</div>
+
+<div class="footer">
+  <p><h3><a href="footer_1.html">컴괴사 소개</a> | <a href="footer_2.html">이용약관</a> | <a href="footer_3.html">개인정보 취급방침</a> | <a href="#">상단으로</a></h3></p>
+  <hr>
+  <h5>대표번호 : 010-8301-6720 팩스번호 : 032-672-3422 메일 : ckrkdnswlssl@gmail.com</h5>
+  <br>
+  <a href="https://www.instagram.com/cch_in/" target="blank"><img src="../image/instagram.png" width="50" height="50"></a>
+  <a href="https://www.facebook.com/cch.fabk" target="blank"><img src="../image/facebook.png" width="50" height="50"></a>
+  <a href="https://www.google.co.kr/" target="blank"><img src="../image/google.png" width="50" height="50"></a>
+  <a href="https://www.youtube.com/channel/UCBQxXibm4tH5_svrPhGBSJw?view_as=subscriber" target="blank"><img src="../image/youtube.png" width="50" height="50"></a>
+  <a href="https://cafe.naver.com/overcool" target="blank"><img src="../image/naverblog.png" width="50" height="50"></a>
+  <h5>Copyright @ www.overcool.net ⓒ All rights reserved.</h5>
+</div>
+
+</body>
+</html>
