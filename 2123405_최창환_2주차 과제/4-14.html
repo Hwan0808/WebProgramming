@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		var fruit = ['포도','사과','바나나','망고'];
+		var x = '';
+		for(var i in fruit) {
+			x += fruit[i] + ' '; 
+		}
+		alert(x);
+
+		x = ''; 
+		for(var i of fruit) {
+			x += i;
+		}
+		alert(x);
+	</script>
+		
+</head>
+<body>
+
+</body>
+</html>
