@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Document
+        </title>
+            <script>
+                // Object 객체의 프로토타입에 메서드를 추가한다.
+                Object.prototype.test = function () {
+                    alert(this);
+                }
+                // Number 객체의 test() 메소드를 호출한다.
+                var number = 273;
+                number.test();
+            </script>
+    </head>
+</html>

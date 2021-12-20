@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Document
+        </title>
+            <script>
+               var number = 273.5710332; 
+               var number = new Number(273.5710332);
+               var output = '';
+
+               output += number.toFixed(1) + '\n'; // 보통 반올림이 된다.
+               output += number.toFixed(4) + '\n'; 
+               output += number.toPrecision(8) + '\n'; // (8) = 273.57103 유효숫자
+               alert(output);
+
+            </script>
+    </head>
+</html>

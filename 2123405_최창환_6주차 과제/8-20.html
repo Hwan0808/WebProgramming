@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Document
+        </title>
+            <script>
+                var str = 'abcdefg love';
+                // str = str.toUpperCase(); // 대문자로 변환 후 저장
+                // alert(str.charAt(0)); // 첫번째 문자 출력
+                alert(str + " " + str.concat(" test")); // string 객체가 변하지는 않는다.
+                alert(str + " " + str.indexOf("cde",0)); // 0번째 제일 앞에서부터 찾아라.
+                alert(str + " " + str.indexOf("love",5)); // 5번째 부터 love 위치를 찾아라.
+                alert(str + " " + str.slice(8,11)); 
+            </script>
+    </head>
+</html>
