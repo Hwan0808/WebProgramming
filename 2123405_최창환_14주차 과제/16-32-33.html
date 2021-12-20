@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+    <script>
+        $(document).ready(function(event) {
+            $('textarea').keyup(function() {
+                var inputLength = $(this).val().length;
+                var remain = 150 - inputLength;
+
+                $('h1').html(remain);
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <div>
+        <p>지금 내 생각을</p>
+        <h1>150</h1>
+        <textarea cols="70" rows="5"></textarea>
+    </div>
+</body>
+
+</html>
