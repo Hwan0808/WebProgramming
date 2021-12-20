@@ -4,7 +4,7 @@
 
 <p align="center"> 
          <B>WebProgramming _ html,css,javascript</B><br><br>
-         Sungkonghoe University WebProgramming in 2019 
+         Korea National University of Transportation WebProgramming in 2019 
 </p>
 
 
