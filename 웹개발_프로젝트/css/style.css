@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'SDSamliphopangche_Outline';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: 'SDSamliphopangche_Outline';
+  padding: 5%;
+  background-color: #ffffff;
+}
+
+/*홈페이지 상단*/
+.header {
+  font-family: 'SDSamliphopangche_Outline';
+  background-image: url("../image/background.png");
+  padding: 0.5%;
+  text-align: center;
+  background-color: #ffffff;
+}
+.header img {
+  float: center; clear: both;
+}
+.header h1 {  
+  font-size: 50px;
+}
+.header div {
+  font-weight: bold;
+}
+.header p {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/*메뉴*/
+.nav ul {
+  overflow: hidden;
+  background-color: black;
+  text-align: center;
+}
+.nav ul li {
+  display: inline-block;
+  padding: 20px 20px;
+}
+.nav ul li a {
+  text-decoration: none;
+  font-color:#ffffff;
+  color: #ffffff;
+}
+.nav ul li a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+.nav ul li input {
+  text-decoration: none;
+}
+.nav ul li button {
+  text-decoration: none;
+  font-color:#ffffff;
+}
+.nav ul li img {
+  vertical-align: middle;
+
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/*게시판*/
+.cont {
+  overflow: hidden;
+}
+.cont div:hover {
+  background-color: #f4f4f4;
+}
+.cont table {
+  width: 100%;
+  border-top: 1px solid;
+  border-collapse: collapse;
+}
+.cont th {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+}
+.cont th a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.cont th a:hover {
+  text-decoration: underline;
+}
+.cont td {
+  background-color: #ffffff;
+  overflow: hidden;
+  text-overflow: ellipsis; white-space: nowrap;
+}
+.cont th, td {
+  border-bottom: 1px solid;
+  padding: 10px;
+}
+.cont td a {
+  text-decoration: none;
+}
+.cont td a:hover {
+  text-decoration: underline;
+}
+.cont td a:visited {
+  color: black;
+}
+.cont td a:link {
+  color: black;
+}
+.cont td img {
+  vertical-align: middle;
+}
+.first {
+  width: 100px;
+  text-align: center;
+}
+.second {
+  width: 200px;
+}
+.third {
+  width: 200px;
+  text-align: center;
+}
+.four {
+  width: 80px;
+  text-align: center;
+}
+.cont .explain {
+  color: orange;
+  font-weight: bold;
+}
+.cont .column a {
+  text-decoration: none;
+}
+.cont .column a:hover{
+  text-decoration: underline; 
+  color: orange;
+}
+.cont .column a:link {
+  color: black;
+}
+.cont .column a:visited {
+  color: black;
+}
+.gauge_1 {
+  color: #ffffff;
+}
+.gauge_2 {
+  color: #ffffff;
+}
+.cont img {
+  width: 30px; height: 30px;
+}
+.cont .column {
+  position: relative;
+  float:left; width: 30%; height: 300px;
+  margin-left: 2.5%;
+  box-sizing: border-box;
+  }
+
+.cont .col1 { border: 1px solid #dddddd; white-space: normal; }
+.col1 h4 { text-align: center; }
+.cont .col2 { border: 1px solid #dddddd; white-space: normal; }
+.col2 h4 { text-align: center; }
+.cont .col3 { border: 1px solid #dddddd; white-space: normal; }
+.col3 h4 { text-align: center; }
+.cont .col4 { border: 1px solid #dddddd; white-space: normal; }
+.col4 h4 { text-align: center; }
+.cont .col5 { border: 1px solid #dddddd; white-space: normal;}
+.col5 h4 { text-align: center; }
+.cont .col6 { border: 1px solid #dddddd; white-space: normal; }
+.col6 h4 { text-align: center; }
+
+/*홈페이지 하단*/
+.footer {
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+.footer a:link {
+  text-decoration: none;
+  color: black;
+}
+.footer a:visited {
+  color: black;
+}
+.footer img {
+  display: inline-block;
+  margin-top: -15px;
+  padding: 10px;
+}
+
+/*시계*/
+#clock {
+  text-align: right;
+  padding: 10px 0px 10px 0px;
+}

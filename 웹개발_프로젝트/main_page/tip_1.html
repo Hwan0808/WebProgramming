@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="최창환">
+  <meta name="description" content="컴퓨터 관련 커뮤니티 사이트">
+  <meta name="keywords" content="커뮤니티,컴퓨터,하드웨어,소프트웨어">
+	<title>컴괴사</title>
+  <script type="text/javascript" src="../javascript/javascript.js"></script>
+<style type="text/css">
+  @import url(../css/style.css);
+</style>
+</head>
+<body onload="timer()">
+
+<div id ="clock"></div>
+
+<form align="right">
+  <label class="id">ID :</label>
+    <input name="userid" type="text" placeholder="아이디를 입력해주세요.">&nbsp;&nbsp;
+  <label class="id">PW :</label>
+    <input name="pwd" type="password" placeholder="비밀번호를 입력해주세요.">&nbsp;&nbsp;
+    <input type="submit" value="     로그인     " style="bottom: 10px">&nbsp;
+    <a href="group.html"><input type="button" value="   회원가입   " style="bottom: 10px"></a><br><br>
+</form>
+
+<div class="header">
+  <div style="font-family: 'Nanum Gothic', sans-serif; font-size: 50px;"><p>컴퓨터를 괴롭히는 사람들 "컴괴사"</p></div>
+  <div style="font-family: 'Nanum Gothic', sans-serif;">컴괴사는 컴퓨터 하드웨어 주가 되는 곳이며, 여러분이 만들어가는 커뮤니티 입니다.</div>
+  <div><a href="main.html"><img src="../image/littledeep_computer_style1.png" width="150" height="150"></a><p style="font-family: 'Nanum Gothic', sans-serif; text-align: right;">Created By @cch_in<p></div>
+</div>
+
+<div class="nav">
+  <ul>
+  <li><img src="../image/공지사항.png" width="30" height="30" alt="이미지 없음">&nbsp;&nbsp;<a href="main_1.html" onmousedown="this.style.color='blue'">공지사항</a></li>
+  <li><img src="../image/칼럼.png" width="30" height="30" alt="이미지 없음">&nbsp;&nbsp;<a href="main_2.html" onmousedown="this.style.color='blue'">칼럼</a></li>
+  <li><img src="../image/뉴스정보.png" width="30" height="30" alt="이미지 없음">&nbsp;&nbsp;<a href="main_3.html" onmousedown="this.style.color='blue'">뉴스/정보</a></li>
+  <li><img src="../image/성능비교.png" width="30" height="30" alt="이미지 없음">&nbsp;&nbsp;<a href="main_4.html" onmousedown="this.style.color='blue'">성능비교</a></li>
+  <li><img src="../image/커뮤니티.png" width="30" height="30" alt="이미지 없음">&nbsp;&nbsp;<a href="main_5.html" onmousedown="this.style.color='blue'">커뮤니티</a></li>
+  <label><li><form><input type="text" placeholder="검색어를 입력해주세요.">
+            <input type="submit" value="검색" onclick="warning()" >
+      </form>
+  </li></label>
+  </ul>
+</div>
+
+<div class="cont">
+
+<table>
+  <tr><th>팁/노하우<br><br>
+  [팁] 나만의 윈도우 10 타이틀 바 색상 변경하기 <br><br>  
+  작성자 러브유 16-03-11 23:40 조회 4,732 회</th></tr>
+</table>
+
+</div>
+
+<div class="tip_1" align="center" style="line-height: 2; min-height: 30px; padding: 10px 25% 100px 25%;">
+
+<p>윈도우 10 제목 표시줄에 색상을 표시하지 않으면 아래처럼 좀 답답한 상황이 있죠.</p>
+
+<p>탐색기의 A 부분을 클릭하면 창이 움직이지만..B는 절대로 움직이지 않습니다.</p>
+
+<p>그래서 어느 정도 색상이 있다면 표시가 되기에 덜 답답하겠죠~</p>
+
+<p>설정에서 색을 변경할 수 있지만..마음에 드는 색상이 없군요.ㅜ</p>
+
+<p>그래서 나만의 타이틀 바 색상으로 변경했습니다.-0-</p>
+
+<img src="../image/win.jpg" width="830" height="400" border="10px" style="border-color: #f1f1f1;">
+
+<p>다만, 일반적인 타이틀 바 색상은 변경이 되지만..설정창은 아직 방법을 모르겠군요.</p>
+
+<p>그리고 아무 색상을 선택해서 꼭 제목 표시줄에 색 표시를 켬으로 해야 적용이 됩니다.</p>
+
+<img src="../image/win_1.jpg" width="830" height="400" border="10px" style="border-color: #f1f1f1;">
+
+<p>그리고 약간의 레지스트리 편집이 필요한데요~</p>
+ 
+<p>레지스트리 편집기에서 AccentColor와 ColorPrevalence의 값을 변경해야 됩니다.</p>
+
+<p>값 데이터는 인터넷에서 검색해서 HTML 컬러 코드를 참고하면 되고요~</p>
+
+<p>예) http://htmlcolorcodes.com/</p>
+
+<p>주의) 값 데이터에 ff를 처음에 붙여서 적용해야 합니다.</p>
+
+<img src="../image/win_2.jpg" width="830" height="400" border="10px" style="border-color: #f1f1f1;">
+
+<p>HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\DWM</p>
+
+<p>개인적으로 약간 여린 회색 계열로 적용했는데 나름 볼 만하군요 +_+</p>
+
+<img src="../image/win_3.jpg" width="830" height="400" border="10px" style="border-color: #f1f1f1;">
+
+<p>레드스톤 기준으로 참고하세요-ㅅ-</p>
+
+</div>
+
+<div class="footer">
+  <p><h3><a href="footer_1.html">컴괴사 소개</a> | <a href="footer_2.html">이용약관</a> | <a href="footer_3.html">개인정보 취급방침</a> | <a href="#">상단으로</a></h3></p>
+  <hr>
+  <h5>대표번호 : 010-8301-6720 팩스번호 : 032-672-3422 메일 : ckrkdnswlssl@gmail.com</h5>
+  <br>
+  <a href="https://www.instagram.com/quasarzone_official/" target="blank"><img src="../image/instagram.png" width="50" height="50" alt="이미지 없음"></a>
+  <a href="https://www.facebook.com/quasarzonekr" target="blank"><img src="../image/facebook.png" width="50" height="50" alt="이미지 없음"></a>
+  <a href="https://namu.wiki/w/%ED%80%98%EC%9D%B4%EC%82%AC%EC%A1%B4" target="blank"><img src="../image/google.png" width="50" height="50" alt="이미지 없음"></a>
+  <a href="https://www.youtube.com/channel/UC17_4RLogNieDO33smNlcWw" target="blank"><img src="../image/youtube.png" width="50" height="50" alt="이미지 없음"></a>
+  <a href="https://blog.naver.com/quasarzone" target="blank"><img src="../image/naverblog.png" width="50" height="50" alt="이미지 없음"></a>
+  <h5>Copyright @ www.overcool.net ⓒ All rights reserved.</h5>
+</div>
+
+</body>
+</html>
