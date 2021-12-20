@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .high-light {
+            background: yellow;
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('h1').addClass('high-light');
+
+            $.noConflict();
+            var J = jQuery;
+
+            J(document).ready(function() {
+                J('h1').removeClass('high-light');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1>item - 0</h1>
+    <h1>item - 1</h1>
+    <h1>item - 2</h1>
+    <h1>item - 3</h1>
+    <h1>item - 4</h1>
+</body>
+
+</html>

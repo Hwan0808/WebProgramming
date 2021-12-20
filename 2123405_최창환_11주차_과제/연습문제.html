@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            var array = ['고구마','감자','배추','시래기'];
+
+            $.each(array,function(index, item) {
+                var output = "";
+                output += "<h1>" + item + "</h1>";
+                document.body.innerHTML += output; 
+            });
+
+        
+        });
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
