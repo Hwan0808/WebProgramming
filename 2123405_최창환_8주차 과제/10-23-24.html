@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Index
+    </title>
+    <script>
+        window.onload = function() {
+            var willRemove = document.getElementById('will-remove');
+
+            // document.body.removeChild(willRemove);
+            willRemove.parentElement.removeChild(willRemove);
+        };
+    </script>
+</head>
+
+<body>
+    <h1 id="will-remove">Header</h1>
+</body>
+
+</html>

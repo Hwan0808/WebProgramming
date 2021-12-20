@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Index
+    </title>
+    <script>
+        function nextRandomInteger(limit) {
+            return Math.round(Math.random() * limit);
+        }
+        var img = ["stone.png"];	
+
+        var StoneArray = new Array();
+
+        for(var i=0; i<1; i++) {
+	        StoneArray[i] = new Image(); // 이미지 객체 생성
+            StoneArray[i].src = img[i]; // 이미지 미리 로딩
+        } 
+
+        function randomAlphabet() {
+            return StoneArray;
+        }
+
+        function randomSpeed(maxSpeed) {
+            return Math.random() * (maxSpeed * 2) - 10; // -10~10 까지 구간
+        }
+    </script>
+    <script>
+        var canvasWidth = 700;
+        var canvasHeight = 400;
+
+        function MovingText() {
+            this.x = nextRandomInteger(canvasWidth); // 좌표 결정
+            this.y = nextRandomInteger(canvasHeight); // 좌표 결정
+            this.vx = randomSpeed(10);
+            this.vy = randomSpeed(10);
+
+            this.mvt = document.createElement('h1');
+            this.mvt.innerHTML = randomAlphabet();
+            this.mvt.style.position = 'absolute';
+
+            // document.body.appendChild(this.mvt);
+            document.getElementById("mycanvas").appendChild(this.mvt);
+        }
+
+        MovingText.prototype.move = function() {
+            if (this.x < 0 || this.x > canvasWidth) {
+                this.vx *= -1;
+            } // 캔버스의 크기를 넘어가면 다시 안쪽으로 유도
+            if (this.y < 0 || this.y > canvasHeight) {
+                this.vy *= -1;
+            } // 캔버스의 크기를 넘어가면 다시 안쪽으로 유도
+
+            this.x += this.vx;
+            this.y += this.vy;
+
+            this.mvt.style.left = this.x + 'px';
+            this.mvt.style.top = this.y + 'px';
+        }
+    </script>
+    <script>
+        window.onload = function() {
+            var movingTexts = [];
+
+            for (var i = 0; i < 100; i++) {
+                movingTexts.push(new MovingText());
+            }
+
+            setInterval(function() {
+                for (var i in movingTexts) {
+                    movingTexts[i].move();
+                }
+            }, 1000 / 60)
+        }
+    </script>
+</head>
+
+<body>
+    <div id="mycanvas">
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Index
+        </title>
+            <script>
+            var intid
+            window.onload = function () {
+              var clock = document.getElementById('clock');
+
+              intid = setInterval(() => {
+                 clock.innerHTML = new Date().toString(); 
+              }, 1000);
+            };
+            function stop() {
+                clearInterval(intid);
+            }
+            </script>
+    </head>
+    <body>
+        <h1 id = "clock">Time</h1>
+        <button onclick="stop()">stop</button>
+    </body>
+</html>
