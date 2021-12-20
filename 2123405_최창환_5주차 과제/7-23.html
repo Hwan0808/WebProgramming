@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function Human(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        Human.prototype.intro = function() {
+            document.write("name = " + this.name + "<br>");
+            document.write("age = " + this.age + "<br>");
+        };
+
+        function Student(name, age, major) {
+            this.parent = Human;
+            this.parent(name, age);
+            this.major = major;
+        }
+
+        Student.prototype = Human.prototype;
+
+        Student.prototype.intro = function() {
+            document.write("name = " + this.name + "<br>");
+            document.write("age = " + this.age + "<br>");
+            document.write("major = " + this.major + "<br>");
+        };
+
+        Student.prototype.study = function() {
+            document.write("공부중<br>");
+        };
+
+        var kim = new Human("김상형", 29);
+        kim.intro();
+
+        var lee = new Student("이승우", 42, "경영학");
+        lee.intro();
+        lee.study();
+
+        Student.prototype.nationality = "English";
+
+        document.write(kim.nationality + "<br>");
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

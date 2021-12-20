@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        var person = {
+            name: '윤인성',
+            eat: function(food) {
+                alert(this.name + '은 ' + food + "을/를 먹어요");
+            },
+            age: 23
+        };
+        // person.eat('점심');
+        output = " ";
+        person.position = "student";
+        document.writeln("나이: " + person.age + "<br> 이름: " + person['name']);
+        for (var key in person) {
+            output += key + ' ' + person[key] + '\n';
+        }
+        // alert(output);
+        if ("age" in person) {
+            if (person.age < 30) {
+                alert(person.name + " 는 젊습니다.");
+            }
+        }
+        alert(output);
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

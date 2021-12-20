@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <script>
+         function Rectangle(width, height) {
+             this.width = width;
+             this.height = height;
+         }
+         Rectangle.prototype.getArea = function () {
+             return this.width * this.height;
+         };
+
+         var rectangle = new Rectangle(5,7);
+         alert('AREA: ' + rectangle.getArea());
+
+         var rectangle = new Rectangle(5,7);
+         rectangle.width = -2;
+         alert('AREA: ' + rectangle.getArea());
+        </script>
+    </head>
+<body>
+</body>
+
+</html>

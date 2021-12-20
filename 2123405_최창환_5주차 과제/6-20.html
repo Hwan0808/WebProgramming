@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <script>
+        var students = [];
+        students.push({ 이름: '윤인성', 국어: 87, 수학: 98, 영어: 88, 과학: 95});
+        students.push({ 이름: '윤인성', 국어: 87, 수학: 98, 영어: 88, 과학: 95});
+        students.push({ 이름: '윤인성', 국어: 87, 수학: 98, 영어: 88, 과학: 95});
+        students.push({ 이름: '윤인성', 국어: 87, 수학: 98, 영어: 88, 과학: 95});
+        students.push({ 이름: '윤인성', 국어: 87, 수학: 98, 영어: 88, 과학: 95});
+        students.push({ 이름: '윤인성', 국어: 87, 수학: 98, 영어: 88, 과학: 95});
+        students.push({ 이름: '윤인성', 국어: 87, 수학: 98, 영어: 88, 과학: 95});
+        students.push({ 이름: '윤인성', 국어: 87, 수학: 98, 영어: 88, 과학: 95});
+        students.push({ 이름: '윤인성', 국어: 87, 수학: 98, 영어: 88, 과학: 95});
+
+        for(var i in students){ // students[i] 배열의 각각의 원소를 가져온다.
+            students[i].getSum = function () {
+                return this.국어 + this.수학 + this.영어 + this.과학;
+            };
+            students[i].getAverage = function () {
+                return this.getSum() / 4;
+            };
+        }
+
+        var output = '이름\t총점\t평균\n';
+        for (var i in students) {
+            with (students[i]) {
+                output += 이름 + '\t' + getSum() + '\t' + getAverage() + '\n';
+            }
+        }
+        alert(output);
+        </script>
+    </head>
+<body>
+</body>
+
+</html>
