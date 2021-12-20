@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Index
+    </title>
+    <script>
+        try {
+            var array = new Array(9999999999);
+        } catch (exception) {
+            var output = ' ';
+            for (var i in exception) {
+                output += i + ': ' + exception[i] + '\n';
+            }
+            alert(output);
+        }
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

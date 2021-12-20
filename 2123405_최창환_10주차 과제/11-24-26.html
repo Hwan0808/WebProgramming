@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Index
+    </title>
+    <script>
+        window.onload = function() {
+            document.getElementById('header').onclick = function() {
+                alert('header');
+            }
+            document.getElementById('paragraph').onclick = function() {
+                alert('paragraph');
+            }
+            document.getElementById('paragraph').onclick = function(e) {
+                var event = e || window.event;
+            }
+            alert('paragraph');
+
+            event.cancelBubble = true;
+            if (event.stopPropagation) {
+                event.stopPropagation();
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1 id="header">
+        <p id="paragraph">
+            Paragraph
+        </p>
+    </h1>
+</body>
+
+</html>

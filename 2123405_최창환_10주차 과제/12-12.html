@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Index
+    </title>
+    <script>
+        function divide(alpha, beta) {
+            if (beta == 0) {
+                throw 'DivideByZeroException';
+            } else {
+                return alpha / beta;
+            }
+        }
+
+        try {
+            divide(10, 0);
+        } catch {
+            alert('catch');
+        }
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

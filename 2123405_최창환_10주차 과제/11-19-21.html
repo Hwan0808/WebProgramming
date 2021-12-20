@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Index
+    </title>
+    <script>
+        window.onload = function() {
+            document.getElementById('my-form').onsubmit = function() {
+
+                var pass = document.getElementById('pass').value;
+                var passCheck = document.getElementById('pass-check').value;
+
+                if (pass == passCheck) {
+                    alert('성공');
+                } else {
+                    alert('다시 입력해주세요.');
+                    return false;
+                }
+            };
+        };
+    </script>
+</head>
+
+<body>
+    <form id="my-form">
+        <label for="name">이름</label><br/>
+        <input type="text" name="name" id="name" /><br/>
+        <label for="pass">비밀번호</label><br/>
+        <input type="password" name="pass" id="pass" /><br/>
+        <label for="pass-check">비밀번호 확인</label><br/>
+        <input type="password" name="pass-check" /><br/>
+        <input type="submit" value="제출" />
+
+    </form>
+</body>
+
+</html>
