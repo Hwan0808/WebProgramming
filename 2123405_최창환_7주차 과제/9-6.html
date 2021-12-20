@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Document
+        </title>
+            <script>
+              var child = window.open('','','width=300, height=200');
+            child.moveTo(0,0);
+
+            setInterval(() => {
+                child.moveBy(10,10);
+            }, 1000);
+
+            clearInterval(child); 
+            
+            </script>
+    </head>
+</html>

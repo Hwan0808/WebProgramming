@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Document
+    </title>
+    <script>
+        var object = {
+            name: 'RintIanTta',
+            gender: 'Male'
+        };
+        var str = JSON.stringify(object); // JSON 형태로 만듬
+        var obj_copy = JSON.parse(str); // 다시 객체 형태로 반환
+        alert(obj_copy.name + " " + obj_copy.gender);
+    </script>
+</head>
+
+</html>
