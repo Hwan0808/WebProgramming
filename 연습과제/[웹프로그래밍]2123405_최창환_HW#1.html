@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Document</title>
+	<script type="text/javascript">
+
+		// 변수를 선언하여 각각의 점수를 입력받는다. (메세지 창 출력)
+		var Korean = prompt('점수를 입력하세요.','국어 점수');
+		var English = prompt('점수를 입력하세요.','영어 점수');
+		var Mathmatics = prompt('점수를 입력하세요.','수학 점수');
+
+		// 평균을 계산하기 위해 각 입력값을 숫자로 변환 한 뒤 평균을 계산한다.
+		var one = Number(Korean);
+		var two = Number(English);
+		var three = Number(Mathmatics);
+		
+		// 평균 계산식
+		var Avg = (one + two + three) / 3;
+
+		alert("국영수 평균점수는 " + Avg + " 입니다.");
+
+		// 평균 값을 판별하여 '수','우','미','양','가'로 출력한다.
+		if (Avg>=90) {
+			alert("수");
+		} else if(Avg>=80) {
+			alert("우");
+		} else if(Avg>=70) {
+			alert("미");
+		} else if(Avg>=60) {
+			alert("양");
+		} else if(Avg>=50) {
+			alert("가");
+		} else {
+			alert("잘못입력하셨습니다. 다시 입력해주세요.");
+		}
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

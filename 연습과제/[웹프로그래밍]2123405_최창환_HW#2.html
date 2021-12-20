@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery.getJSON.demo</title>
+    <style>
+        img {
+            height: 100px; /* 이미지 크기(높이) 설정 */
+            float: left; /* 왼쪽 정렬 */
+        } 
+    </style>
+    <script src="http://code.jquery.com/jquery-3.1.1.js"></script>  
+    <script>
+        function downloading(value) { // flickerAPI를 불러오기 위한 함수 선언
+            var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?"; // 원격으로 flickerAPI 받아오기.
+            var keyword = value; // 사용자가 입력한 값을 받아오기 위한 변수 선언
+            jQuery.getJSON(flickerAPI, {tags: keyword, tagmode: "any", format: "json"}).done(function (data)
+             { // 사용자가 입력한 값을 API 서버에서 JSON 객체를 이용해 받아온다. 
+                $.each(data.items, function (i, item) { 
+                    $("<img>").attr("src",item.media.m).appendTo("#images"); // 불러온 데이터를 id 값이 images 인 이미지 태그에 추가시킨다.
+                    $('img').attr('width','10%'); // 이미지 태그의 넓이는 전체 크기의 10%로 설정한다.
+                        if(i == 3) {
+                            return false;
+                        }
+
+                });
+            });
+        };
+    </script>
+</head>
+<body>
+    <p>
+        <input id="tag" type="text"></input> 
+        <button>Download</button> 
+    </p>
+    <div id="images"></div>
+<script>
+      $(document).ready(function() { 
+            $('button').click(function() { // 사용자가 다운로드 버튼을 클릭하면
+                var value = $('#tag').val(); // 텍스트 상자의 입력 값을 받아서
+                $(downloading(value));  // downloading() 함수에 값을 넘겨준다.
+            });
+        });
+</script>
+</body>
+</html>
